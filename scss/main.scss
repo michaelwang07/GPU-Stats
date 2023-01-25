@@ -1,0 +1,52 @@
+@use 'custom';
+
+$primary: #9f9480;
+
+body {
+    color: $primary;
+    background: rgb(33, 37, 41);
+    padding-top: 100px;
+}
+
+div {
+    margin-top: 20px;
+}
+
+td,
+th{
+    text-align: left;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+.title-1 {
+    font-size: 250%;
+    color: $primary;
+    margin-top: 20px;
+}
+
+.title-2 {
+    font-size: 100%;
+    color: $primary;
+    margin-top: 20px;
+}
+
+.container-1{
+    border:1px #ccc solid;
+    padding: 10px;
+}
+
+.accordion div button{
+    color: default;
+    background-color: white;
+}
+
+.table {
+    color: default;
+    margin-top: 40px;
+}
+
+#accordionFlushExample div button{
+    color: $primary;
+    background-color: white;
+}

@@ -1,0 +1,37 @@
+/* $primary: #dbc59c; */
+
+body {
+    color: #dbc59c;
+    padding-top: 100px;
+}
+
+div {
+    margin-top: 20px;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.title-1 {
+    font-size: 250%;
+    color: #dbc59c;
+    margin-top: 20px;
+}
+
+.title-2 {
+    font-size: 100%;
+    color: #dbc59c;
+    margin-top: 20px;
+}
+
+.container-1 div{
+    border:1px #ccc solid;
+    padding: 10px;
+}
+
+.table {
+    color: white;
+    margin-top: 40px;
+}
