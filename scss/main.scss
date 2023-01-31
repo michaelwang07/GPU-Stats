@@ -1,15 +1,22 @@
 @use 'custom';
 
-$primary: #9f9480;
+$primary: #c1b49c;
+$background: #22272e;
+$text: #adbac7;
 
 body {
     color: $primary;
-    background: rgb(33, 37, 41);
-    padding-top: 100px;
+    background: $background;
 }
 
-div {
-    margin-top: 20px;
+p {
+    display: inline;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 td,
@@ -19,10 +26,31 @@ th{
     padding: 10px;
 }
 
+.button{
+    border: 0px;
+    padding: 0px 0px;
+    margin: 0px;
+    width: 0px;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flexbox button{
+    flex: 1 1 0;
+    justify-content: space-around;
+}
+
+.flexbox div{
+    flex: 1 1 0;
+    justify-content: space-around;
+    text-align: center;
+}
+
 .title-1 {
-    font-size: 250%;
+    font-size: 300%;
     color: $primary;
-    margin-top: 20px;
 }
 
 .title-2 {
@@ -32,13 +60,29 @@ th{
 }
 
 .container-1{
-    border:1px #ccc solid;
-    padding: 10px;
+    border: 1px #ccc solid;
+    padding: 3px;
 }
 
-.accordion div button{
-    color: default;
-    background-color: white;
+.container-2{
+    display: flex;
+    border: 1px #ccc solid;
+    padding: 3px;
+}
+
+.button_description{
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.accordion div{
+    color: $text;
+    background-color: #2d333b;
 }
 
 .table {
@@ -47,6 +91,6 @@ th{
 }
 
 #accordionFlushExample div button{
-    color: $primary;
-    background-color: white;
+    color: $text;
+    background-color: #2d333b;
 }

@@ -11839,13 +11839,22 @@ textarea.form-control-lg {
   }
 }
 body {
-  color: #9f9480;
-  background: rgb(33, 37, 41);
-  padding-top: 100px;
+  color: #c1b49c;
+  background: #22272e;
 }
 
-div {
-  margin-top: 20px;
+p {
+  display: inline;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 5px;
+          margin-inline-start: 5px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 td,
@@ -11855,26 +11864,64 @@ th {
   padding: 10px;
 }
 
+.button {
+  border: 0px;
+  padding: 0px 0px;
+  margin: 0px;
+  width: 0px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flexbox button {
+  flex: 1 1 0;
+  justify-content: space-around;
+}
+
+.flexbox div {
+  flex: 1 1 0;
+  justify-content: space-around;
+  text-align: center;
+}
+
 .title-1 {
-  font-size: 250%;
-  color: #9f9480;
-  margin-top: 20px;
+  font-size: 300%;
+  color: #c1b49c;
 }
 
 .title-2 {
   font-size: 100%;
-  color: #9f9480;
+  color: #c1b49c;
   margin-top: 20px;
 }
 
 .container-1 {
   border: 1px #ccc solid;
-  padding: 10px;
+  padding: 3px;
 }
 
-.accordion div button {
-  color: default;
-  background-color: white;
+.container-2 {
+  display: flex;
+  border: 1px #ccc solid;
+  padding: 3px;
+}
+
+.button_description {
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.accordion div {
+  color: #adbac7;
+  background-color: #2d333b;
 }
 
 .table {
@@ -11883,6 +11930,6 @@ th {
 }
 
 #accordionFlushExample div button {
-  color: #9f9480;
-  background-color: white;
+  color: #adbac7;
+  background-color: #2d333b;
 }/*# sourceMappingURL=main.css.map */
