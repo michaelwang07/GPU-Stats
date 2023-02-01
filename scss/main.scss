@@ -1,12 +1,50 @@
 @use 'custom';
 
-$primary: #c1b49c;
 $background: #22272e;
-$text: #adbac7;
+$primary_text: #c1b49c;
+$table_text: #cdd9e5;
+
+:root {
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    margin-left: 7rem;
+    padding: 1rem;
+}
 
 body {
-    color: $primary;
+    color: $primary_text;
     background: $background;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track { 
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #CDCDCD;
+}
+
+.fire_navbar {
+    width: 7rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #20242b;
+}
+
+.fire_navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p {
@@ -26,13 +64,6 @@ th{
     padding: 10px;
 }
 
-.button{
-    border: 0px;
-    padding: 0px 0px;
-    margin: 0px;
-    width: 0px;
-}
-
 .flexbox{
     display: flex;
     justify-content: space-evenly;
@@ -50,12 +81,12 @@ th{
 
 .title-1 {
     font-size: 300%;
-    color: $primary;
+    color: $primary_text;
 }
 
 .title-2 {
     font-size: 100%;
-    color: $primary;
+    color: $primary_text;
     margin-top: 20px;
 }
 
@@ -81,7 +112,7 @@ th{
 }
 
 .accordion div{
-    color: $text;
+    color: $table_text;
     background-color: #2d333b;
 }
 
@@ -91,6 +122,6 @@ th{
 }
 
 #accordionFlushExample div button{
-    color: $text;
+    color: $table_text;
     background-color: #2d333b;
 }
