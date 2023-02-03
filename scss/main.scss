@@ -134,16 +134,6 @@ body::-webkit-scrollbar-thumb {
     transition: $transition-speed;
 }
 
-p {
-    display: inline;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 5px;
-    margin-inline-end: 5px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 td,
 th {
     text-align: left;
@@ -178,10 +168,6 @@ th {
 }
 
 .container-0 {
-    padding-right: 5rem;
-    padding-left: 5rem;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .container-1 {
@@ -212,8 +198,10 @@ th {
 
 .table {
     color: default;
-    margin-top: 40px;
+    margin-top: 20px;
 }
+
+
 
 #accordionFlushExample div button {
     color: $table_text;

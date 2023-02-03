@@ -11966,20 +11966,6 @@ body::-webkit-scrollbar-thumb {
   transition: 600ms;
 }
 
-p {
-  display: inline;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 5px;
-          margin-inline-start: 5px;
-  -webkit-margin-end: 5px;
-          margin-inline-end: 5px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 td,
 th {
   text-align: left;
@@ -12014,13 +12000,6 @@ th {
   margin-top: 20px;
 }
 
-.container-0 {
-  padding-right: 5rem;
-  padding-left: 5rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .container-1 {
   border: 1px #ccc solid;
   padding: 3px;
@@ -12049,7 +12028,7 @@ th {
 
 .table {
   color: default;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #accordionFlushExample div button {
