@@ -11839,13 +11839,8 @@ textarea.form-control-lg {
   }
 }
 :root {
-  font-size: 16px;
-  font-family: "Roboto Slab", serif;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
-  --transition-speed: 600ms;
 }
 
 main {
@@ -11894,6 +11889,31 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: bold;
+  text-align: center;
+  color: #141418;
+  font-size: 1.31rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo-text {
+  margin-left: 2rem;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: 600ms;
+}
+
+.fire_navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
 .nav-item:last-child {
   margin-top: auto;
   margin-bottom: 3.5rem;
@@ -11912,16 +11932,15 @@ body::-webkit-scrollbar-thumb {
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
-  color: var(--text-secondary);
+  color: #c1b49c;
 }
 
 .link-text {
   display: none;
-  margin-left: 1rem;
 }
 
 .nav-link svg {
-  min-width: 2.4rem;
+  min-width: 2rem;
   max-width: 2.4rem;
   margin: 0 1.3rem;
 }
@@ -11935,16 +11954,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fa-primary {
-  color: #ff7eee;
+  color: #c1b49c;
 }
 
 .fa-secondary {
-  color: #df49a6;
+  color: #c1b49c;
 }
 
 .fa-primary,
 .fa-secondary {
-  transition: var(--transition-speed);
+  transition: 600ms;
 }
 
 p {
@@ -11995,6 +12014,13 @@ th {
   margin-top: 20px;
 }
 
+.container-0 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .container-1 {
   border: 1px #ccc solid;
   padding: 3px;
@@ -12029,4 +12055,51 @@ th {
 #accordionFlushExample div button {
   color: #cdd9e5;
   background-color: #2d333b;
+}
+
+@media only screen and (max-width: 768px) {
+  .fire_navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    transition: none;
+  }
+  .fire_navbar-nav {
+    flex-direction: row;
+  }
+  .nav-link {
+    justify-content: center;
+  }
+  .nav-link svg {
+    margin-bottom: 3rem;
+  }
+  .logo {
+    display: none;
+  }
+  .accordion {
+    display: none;
+  }
+  main {
+    margin: 0;
+  }
+  .container-0 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fire_navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  .fire_navbar:hover {
+    width: 16rem;
+  }
+  .fire_navbar:hover .link-text {
+    display: inline;
+    transition: opacity 600ms;
+  }
 }/*# sourceMappingURL=main.css.map */
