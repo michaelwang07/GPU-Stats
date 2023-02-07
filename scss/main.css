@@ -11846,6 +11846,7 @@ textarea.form-control-lg {
 main {
   margin-left: 5rem;
   padding: 1rem;
+  font-family: "Roboto Slab", serif;
 }
 
 body {
@@ -12027,8 +12028,15 @@ th {
 }
 
 .table {
+  table-layout: fixed;
+  width: 100%;
   color: default;
   margin-top: 20px;
+}
+
+.recommend {
+  box-shadow: none !important;
+  background-color: darkgreen !important;
 }
 
 #accordionFlushExample div button {
