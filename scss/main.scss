@@ -168,7 +168,9 @@ th {
     margin-top: 20px;
 }
 
-.container-0 {
+.btn {
+    width: 11rem;
+    background-color: $primary_text;
 }
 
 .container-1 {
@@ -207,6 +209,10 @@ th {
 .recommend{
     box-shadow: none !important;
     background-color: darkgreen !important;
+}
+
+#joined_table{
+    display: none;
 }
 
 #accordionFlushExample div button {

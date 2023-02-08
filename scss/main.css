@@ -12001,6 +12001,11 @@ th {
   margin-top: 20px;
 }
 
+.btn {
+  width: 11rem;
+  background-color: #c1b49c;
+}
+
 .container-1 {
   border: 1px #ccc solid;
   padding: 3px;
@@ -12037,6 +12042,10 @@ th {
 .recommend {
   box-shadow: none !important;
   background-color: darkgreen !important;
+}
+
+#joined_table {
+  display: none;
 }
 
 #accordionFlushExample div button {
