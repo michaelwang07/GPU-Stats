@@ -10,7 +10,3 @@ function myFunction() {
       y.style.display = "block";
     }
 }
-
-$jQuery(function () {
-  $('#joined_table').DataTable();
-});
