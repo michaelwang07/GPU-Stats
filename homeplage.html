@@ -7,10 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./scss/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-  <link href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  crossorigin="anonymous"></script>
-  <script src="homepage.js"></script>
   </link>
 </head>
 <title>GPU Price Tracker</title>
@@ -123,7 +119,7 @@
     </div>
     <div id="split_table" class="mt-5">
       <table class="table table-dark table-striped mt-md-4">
-        <thread>
+        <thead>
           <tr>
             <th scope="col" class="fw-semibold">
               <svg xmlns="http://www.w3.org/2000/svg" width="5.23em" height="1em" viewBox="0 0 512 98" class="me-2"><path d="M312.805 18.394v63.838h18.015V18.394h-18.015Zm-141.742-.108v63.892h18.178v-49.61l14.174.054c4.653 0 7.899 1.136 10.117 3.517c2.867 3.03 4.003 7.952 4.003 16.879v29.16h17.637V46.904c0-25.21-16.068-28.618-31.757-28.618h-32.352Zm170.793.108v63.838h29.214c15.58 0 20.666-2.597 26.13-8.386c3.896-4.057 6.384-13.038 6.384-22.83c0-8.98-2.11-16.987-5.843-21.964c-6.6-8.927-16.23-10.658-30.62-10.658h-25.265Zm17.853 13.85h7.736c11.253 0 18.503 5.03 18.503 18.123c0 13.092-7.25 18.177-18.503 18.177h-7.736v-36.3Zm-72.872-13.85l-15.04 50.583l-14.39-50.583H237.93l20.558 63.838h25.967l20.775-63.838h-18.394Zm125.187 63.838h18.015V18.394h-18.015v63.838Zm50.529-63.838l-25.157 63.784h17.745l4.004-11.307h29.754l3.787 11.252H512l-25.373-63.73h-24.074Zm11.685 11.631l10.929 29.863h-22.181l11.252-29.863Z"/><path fill="#76B900" d="M54.803 28.997v-8.764c.866-.054 1.731-.108 2.597-.108c24.02-.757 39.763 20.666 39.763 20.666S80.176 64.38 61.944 64.38c-2.434 0-4.815-.379-7.087-1.136V36.626c9.36 1.136 11.253 5.247 16.825 14.606L84.18 40.737s-9.143-11.956-24.507-11.956c-1.623-.054-3.246.054-4.869.216m0-28.997v13.092l2.597-.162c33.38-1.136 55.182 27.374 55.182 27.374S87.587 70.708 61.566 70.708c-2.273 0-4.49-.216-6.709-.595v8.115c1.84.217 3.733.379 5.572.379c24.237 0 41.765-12.389 58.753-26.996c2.813 2.272 14.336 7.736 16.717 10.117c-16.122 13.525-53.721 24.399-75.037 24.399a53.2 53.2 0 0 1-5.95-.325v11.415h92.077V0H54.803Zm0 63.243v6.924c-22.397-4.003-28.619-27.32-28.619-27.32s10.766-11.902 28.619-13.85v7.574h-.054c-9.36-1.136-16.717 7.628-16.717 7.628s4.166 14.77 16.771 19.044M15.04 41.873s13.254-19.584 39.817-21.64v-7.14C25.427 15.472 0 40.357 0 40.357s14.39 41.657 54.803 45.444v-7.574C25.156 74.55 15.04 41.873 15.04 41.873Z"/></svg>
@@ -136,7 +132,7 @@
             <th scope="col">4K Ultra</th>
             <th scope="col">Price / Performance</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr>
             <th scope="row" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Recommended!" class="recommend">RTX 4090</th>
@@ -169,7 +165,7 @@
       </table>
 
       <table class="table table-dark table-striped mt-md-4">
-        <thread>
+        <thead>
           <tr>
             <th scope="col" class="fw-semibold">
               <svg xmlns="http://www.w3.org/2000/svg" width="4.17em" height="1em" viewBox="0 0 512 123" class="me-2"><path d="M120.415 114.002H91.868L83.184 93.04H35.839L27.923 114H0L42.654 8.172h30.562l47.199 105.83ZM58.522 33.383L42.838 74.61h32.577L58.522 33.383ZM223.386 8.172h22.976v105.83h-26.384v-65.96l-28.546 33.2h-4.03l-28.547-33.347v65.96H132.47V8.172h22.976l33.97 39.356l33.97-39.356Zm89.816 0c38.624 0 58.632 24.039 58.632 53.061c0 30.415-19.239 52.769-61.453 52.769h-43.9V8.172h46.721Zm-20.337 86.445h17.223c26.53 0 34.446-17.993 34.446-33.53c0-18.323-9.785-33.53-34.74-33.53h-16.93v67.06Zm131.261-54.674v47.931h47.931l-34.226 34.263H389.9V74.169l34.226-34.226ZM512 0v121.11l-33.273-33.273V33.273h-54.564L390.926 0H512Z"/></svg>
@@ -182,7 +178,7 @@
             <th scope="col">4K Ultra</th>
             <th scope="col">Price / Performance</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr>
             <th scope="row" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Recommended!" class="recommend">RX 7900 XTX</th>
@@ -206,7 +202,7 @@
       </table>
 
       <table class="table table-dark table-striped mt-md-4">
-        <thread>
+        <thead>
           <tr>
             <th scope="col" class="fw-semibold">
               <svg xmlns="http://www.w3.org/2000/svg" width="5.23em" height="1em" viewBox="0 0 512 98" class="me-2"><path d="M312.805 18.394v63.838h18.015V18.394h-18.015Zm-141.742-.108v63.892h18.178v-49.61l14.174.054c4.653 0 7.899 1.136 10.117 3.517c2.867 3.03 4.003 7.952 4.003 16.879v29.16h17.637V46.904c0-25.21-16.068-28.618-31.757-28.618h-32.352Zm170.793.108v63.838h29.214c15.58 0 20.666-2.597 26.13-8.386c3.896-4.057 6.384-13.038 6.384-22.83c0-8.98-2.11-16.987-5.843-21.964c-6.6-8.927-16.23-10.658-30.62-10.658h-25.265Zm17.853 13.85h7.736c11.253 0 18.503 5.03 18.503 18.123c0 13.092-7.25 18.177-18.503 18.177h-7.736v-36.3Zm-72.872-13.85l-15.04 50.583l-14.39-50.583H237.93l20.558 63.838h25.967l20.775-63.838h-18.394Zm125.187 63.838h18.015V18.394h-18.015v63.838Zm50.529-63.838l-25.157 63.784h17.745l4.004-11.307h29.754l3.787 11.252H512l-25.373-63.73h-24.074Zm11.685 11.631l10.929 29.863h-22.181l11.252-29.863Z"/><path fill="#76B900" d="M54.803 28.997v-8.764c.866-.054 1.731-.108 2.597-.108c24.02-.757 39.763 20.666 39.763 20.666S80.176 64.38 61.944 64.38c-2.434 0-4.815-.379-7.087-1.136V36.626c9.36 1.136 11.253 5.247 16.825 14.606L84.18 40.737s-9.143-11.956-24.507-11.956c-1.623-.054-3.246.054-4.869.216m0-28.997v13.092l2.597-.162c33.38-1.136 55.182 27.374 55.182 27.374S87.587 70.708 61.566 70.708c-2.273 0-4.49-.216-6.709-.595v8.115c1.84.217 3.733.379 5.572.379c24.237 0 41.765-12.389 58.753-26.996c2.813 2.272 14.336 7.736 16.717 10.117c-16.122 13.525-53.721 24.399-75.037 24.399a53.2 53.2 0 0 1-5.95-.325v11.415h92.077V0H54.803Zm0 63.243v6.924c-22.397-4.003-28.619-27.32-28.619-27.32s10.766-11.902 28.619-13.85v7.574h-.054c-9.36-1.136-16.717 7.628-16.717 7.628s4.166 14.77 16.771 19.044M15.04 41.873s13.254-19.584 39.817-21.64v-7.14C25.427 15.472 0 40.357 0 40.357s14.39 41.657 54.803 45.444v-7.574C25.156 74.55 15.04 41.873 15.04 41.873Z"/></svg>
@@ -219,7 +215,7 @@
             <th scope="col">4K Ultra</th>
             <th scope="col">Price / Performance</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr>
             <th scope="row">RTX 3090 TI</th>
@@ -297,7 +293,7 @@
       </table>
 
       <table class="table table-dark table-striped mt-md-4">
-        <thread>
+        <thead>
           <tr>
             <th scope="col" class="fw-semibold">
               <svg xmlns="http://www.w3.org/2000/svg" width="4.17em" height="1em" viewBox="0 0 512 123" class="me-2"><path d="M120.415 114.002H91.868L83.184 93.04H35.839L27.923 114H0L42.654 8.172h30.562l47.199 105.83ZM58.522 33.383L42.838 74.61h32.577L58.522 33.383ZM223.386 8.172h22.976v105.83h-26.384v-65.96l-28.546 33.2h-4.03l-28.547-33.347v65.96H132.47V8.172h22.976l33.97 39.356l33.97-39.356Zm89.816 0c38.624 0 58.632 24.039 58.632 53.061c0 30.415-19.239 52.769-61.453 52.769h-43.9V8.172h46.721Zm-20.337 86.445h17.223c26.53 0 34.446-17.993 34.446-33.53c0-18.323-9.785-33.53-34.74-33.53h-16.93v67.06Zm131.261-54.674v47.931h47.931l-34.226 34.263H389.9V74.169l34.226-34.226ZM512 0v121.11l-33.273-33.273V33.273h-54.564L390.926 0H512Z"/></svg>
@@ -310,7 +306,7 @@
             <th scope="col">4K Ultra</th>
             <th scope="col">Price / Performance</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr>
             <th scope="row">RX 6950 XT</th>
@@ -415,7 +411,7 @@
       </table>
 
       <table class="table table-dark table-striped mt-md-4">
-        <thread>
+        <thead>
           <tr>
             <th scope="col" class="fw-semibold">
               <svg xmlns="http://www.w3.org/2000/svg" width="2.38em" height="1em" viewBox="0 0 512 216 " class="me-2"><path fill="#00C7FD" d="M0 3.012h40.3v40.3H0z"/><path d="M39.296 212.975V67.693H1.004v145.138h38.292v.144Zm253.562 1.434v-35.568c-5.593 0-10.326-.286-13.768-.86c-4.015-.574-7.027-2.008-9.035-4.016s-3.299-4.876-4.016-8.748c-.573-3.586-.86-8.318-.86-14.055v-50.626h27.68V67.693h-27.68V11.187h-38.293v140.405c0 11.904 1.004 21.943 3.012 29.974c2.008 7.888 5.45 14.342 10.183 19.218c4.732 4.877 11.043 8.319 18.644 10.47c7.744 2.151 17.497 3.155 29.114 3.155h5.02ZM512 212.975V0h-38.292v212.975H512ZM190.028 82.035c-10.613-11.474-25.528-17.21-44.46-17.21c-9.178 0-17.64 1.864-25.097 5.593c-7.602 3.729-13.912 8.892-19.075 15.489l-2.008 2.725V67.693H61.67v145.138h38.006V135.53v5.307v-2.582c.43-13.624 3.729-23.664 10.04-30.117c6.74-6.884 14.915-10.326 24.237-10.326c11.043 0 19.505 3.442 25.098 10.039c5.45 6.597 8.318 15.92 8.318 27.823v77.158h38.58V130.51c.143-20.652-5.307-37.002-15.92-48.475Zm263.888 58.084c0-10.47-1.864-20.222-5.45-29.4c-3.729-9.036-8.892-17.067-15.346-23.951c-6.597-6.885-14.485-12.191-23.663-16.063c-9.18-3.873-19.362-5.737-30.405-5.737c-10.47 0-20.365 2.008-29.544 5.88c-9.179 4.016-17.21 9.322-23.95 16.063c-6.741 6.74-12.191 14.772-16.063 23.95c-4.016 9.18-5.88 19.075-5.88 29.545c0 10.47 1.864 20.365 5.593 29.544c3.729 9.178 9.035 17.21 15.632 23.95c6.598 6.74 14.772 12.19 24.238 16.063c9.465 4.016 19.935 6.024 31.121 6.024c32.413 0 52.491-14.772 64.538-28.54l-27.536-20.94c-5.737 6.885-19.505 16.207-36.715 16.207c-10.756 0-19.648-2.438-26.389-7.458c-6.74-4.876-11.33-11.76-13.768-20.222l-.43-1.29h114.017v-13.625Zm-113.73-13.338c0-10.613 12.19-29.114 38.436-29.257c26.245 0 38.58 18.5 38.58 29.114l-77.016.143Z"/></svg>
@@ -428,7 +424,7 @@
             <th scope="col">4K Ultra</th>
             <th scope="col">Price / Performance</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr>
             <th scope="row">Arc A770 16GB</th>
@@ -454,7 +450,7 @@
 
     <div id="joined_table" class="joined_table mt-5">
       <table id="table_sortable" class="table table-dark table-striped mt-md-4">
-        <thread>
+        <thead>
           <tr>
             <th>
               Graphics Card List
@@ -466,7 +462,7 @@
             <th scope="col">4K Ultra</th>
             <th scope="col">Price / Performance</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           <tr>
             <th scope="row" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Recommended!" class="recommend">RTX 4090</th>
@@ -707,25 +703,65 @@
     </div>
 
     <p class="temp mt-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse doloremque molestias sit doloribus velit</p>
-  </main>
 
-  <script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-  </script>
+    <table id="table-sortable" class="table-sortable">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Occupation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Dom</td>
+          <td>35</td>
+          <td>Web Developer</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rebecca</td>
+          <td>29</td>
+          <td>Teacher</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>John</td>
+          <td>30</td>
+          <td>Civil Engineer</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Andre</td>
+          <td>20</td>
+          <td>Dentist</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+crossorigin="anonymous"></script>
+<script src="homepage.js"></script>
+<script>
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
 
 </html>
 
 <!-- <table class="table table-dark table-striped">
-    <thread>
+    <thead>
         <tr>
             <th scope="col">4000 Series Cards</th>
             <th scope="col">Release Price</th>
             <th scope="col">Current Price</th>
             <th scope="col">Performance</th>
         </tr>
-    </thread>
+    </thead>
 </table> -->
 
       <!-- Accordian Table Attempt -->
