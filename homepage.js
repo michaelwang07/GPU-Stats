@@ -11,7 +11,7 @@ function myFunction() {
     }
 }
 
-function sortTableByColumn(table, column, asc = true) {
+function sortTableByString(table, column, asc = true) {
   const dirModifier = asc ? 1 : -1;
   const tBody = table.tBodies[0];
   const rows = Array.from(tBody.querySelectorAll("tr"));
@@ -50,7 +50,7 @@ function sortTableByNumber(table, column, asc = true) {
     const aNum = parseInt(aColText);
     const bNum = parseInt(bColText);
 
-    return aNum - bNum ? (1 * dirModifier) : (-1 * dirModifier);
+    return (aNum - bNum) > 0 ? (1 * dirModifier) : (-1 * dirModifier);
   });
 
   // Remove all existing TRs from the table
