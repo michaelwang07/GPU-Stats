@@ -211,7 +211,35 @@ th {
     background-color: darkgreen !important;
 }
 
-#joined_table{
+.table_sortable th {
+    cursor: pointer;
+}
+
+.table_sortable .th-sort-asc::after {
+    content: "\25b4";
+}
+
+.table_sortable .th-sort-desc::after {
+    content: "\25be";
+}
+
+.table_sortable .th-sort-asc::after,
+.table_sortable .th-sort-desc::after {
+    margin-left: 5px;
+}
+
+.table_sortable .th-sort-asc,
+.table_sortable .th-sort-desc {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#change-layout {
+    transform: rotate(-5deg);
+    outline: 5px solid #ad8b4c;
+    border-radius: 0;
+}   
+
+#joined_table {
     display: none;
 }
 
