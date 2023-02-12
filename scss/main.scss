@@ -202,6 +202,10 @@ th {
     margin-top: 20px;
 }
 
+.table tr th:first-child {
+    width: 17%;
+}
+
 .recommend{
     box-shadow: none !important;
     background-color: darkgreen !important;
@@ -273,6 +277,14 @@ th {
 
     main {
         margin: 0;
+    }
+
+    .table {
+        font-size: small;
+    }
+
+    .table tr th svg {
+        display: none;
     }
 }
 
