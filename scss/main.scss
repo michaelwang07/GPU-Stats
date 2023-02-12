@@ -280,11 +280,16 @@ th {
     }
 
     .table {
-        font-size: small;
+        font-size: x-small;
     }
 
     .table tr th svg {
         display: none;
+    }
+
+    #center-buttons a{
+        margin-right: 15px !important; 
+        margin-left: 15px !important;
     }
 }
 
