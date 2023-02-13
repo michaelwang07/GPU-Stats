@@ -19,7 +19,7 @@ function sortTableByNumber(table, column, asc = true) {
   const sortedRows = rows.sort((a, b) => {
     const aColText = a.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
     const bColText = b.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
-    if (column == 0 || column == 6) {
+    if (column == 0) {
       return -1;
     }
     const aNum = parseInt(aColText);
