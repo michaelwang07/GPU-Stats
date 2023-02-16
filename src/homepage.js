@@ -52,6 +52,10 @@ document.querySelectorAll('.table_sortable th').forEach(headerCell => {
 	});
 });
 
+document.getElementById("scroll-to-bottom").addEventListener("click", function () {
+  // window.location.replace("attribution.html#bottom");
+});
+
 // document.querySelectorAll(".table-sortable th").forEach(headerCell => {
 // 	headerCell.addEventListener("click", () => {
 // 		const tableElement = headerCell.parentElement.parentElement.parentElement;
